@@ -1,0 +1,14 @@
+.dtstaff-drop-down { position: relative; display: inline-block; width: auto; margin-top: 0; font-family: verdana; }
+
+.dtstaff-drop-down select { display: none; }
+.dtstaff-drop-down .select-list { position: absolute; top: 0; left: 0; z-index: 1; margin-top: 40px; padding: 0; background-color: #595959; }
+
+.dtstaff-drop-down .select-list li { display: none; }
+.dtstaff-drop-down .button span { background-repeat: no-repeat; width: 100%; padding: 4px 20px 15px 38px; }
+
+.dtstaff-drop-down .select-list li span { display: inline-block; min-height: 32px; min-width: 267px; width: 100%;
+    padding: 25px 15px 19px 50px; background-color: #ffffff; background-position: left 10px center; 
+	background-repeat: no-repeat; font-size: 16px; text-align: left; color: #000; opacity: 0.7; box-sizing: border-box; }
+
+.dtstaff-drop-down .select-list li span:hover,  
+.dtstaff-drop-down .select-list li span:focus { opacity: 1; }

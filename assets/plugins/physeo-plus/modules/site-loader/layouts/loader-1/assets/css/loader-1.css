@@ -1,0 +1,115 @@
+/*--------------------------------------------------------------
+    Loader
+--------------------------------------------------------------*/
+
+    .pre-loader {
+        height: 100%;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999991;
+        background-color: #fff;
+    }
+
+    .loader-inner {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        text-align: center;
+        width: 100%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        display: block;
+        height: 71px;
+        width: 71px;
+    }
+    .loader-inner .loader-icon{
+        display: block;
+        position: absolute;
+        top: 0; left: 0;
+        bottom: 0; right: 0;
+        margin: auto;
+        height: 71px;
+        width: 71px;
+    }
+    .loader-inner .loader-icon::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0; left: 0;
+	bottom: 0; right: 0;
+	margin: auto;
+	height: 71px;
+	width: 71px;
+	border: 4px solid var(--wdtPrimaryColor);
+	border-bottom: 5px solid transparent;
+	border-radius: 50%;
+	-webkit-animation: loader-1 1.5s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
+	        animation: loader-1 1.5s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
+    }
+    @-webkit-keyframes loader-1 {
+        0%   { -webkit-transform: rotate(0deg); }
+        40%  { -webkit-transform: rotate(180deg); }
+        60%  { -webkit-transform: rotate(180deg); }
+        100% { -webkit-transform: rotate(360deg); }
+    }
+    @keyframes loader-1 {
+        0%   { transform: rotate(0deg); }
+        40%  { transform: rotate(180deg); }
+        60%  { transform: rotate(180deg); }
+        100% { transform: rotate(360deg); }
+    }
+    .loader-inner .loader-icon::after {
+        content: "";
+        position: absolute;
+        top: 0; left: 0;
+        bottom: 0; right: 0;
+        margin: auto;
+        width: 9px;
+        height: 9px;
+        background: var(--wdtPrimaryColor);
+        border-radius: 50%;
+        -webkit-animation: loader-1-1 1.5s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
+                animation: loader-1-1 1.5s cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
+    }
+    @-webkit-keyframes loader-1-1 {
+        0%   { -webkit-transform: translate3d(0, -32px, 0) scale(0, 2); opacity: 0; }
+        50%  { -webkit-transform: translate3d(0, 0, 0) scale(1.25, 1.25); opacity: 1; }
+        100% { -webkit-transform: translate3d(0, 8px, 0) scale(0, 0); opacity: 0; }
+    }
+    @keyframes loader-1-1 {
+        0%   { transform: translate3d(0, -32px, 0) scale(0, 2); opacity: 0; }
+        50%  { transform: translate3d(0, 0, 0) scale(1.25, 1.25); opacity: 1; }
+        100% { transform: translate3d(0, 8px, 0) scale(0, 0); opacity: 0; }
+    }
+
+
+
+
+/*--------------------------------------------------------------
+    Accents
+--------------------------------------------------------------*/
+
+    .pre-loader { background-color: var(--wdtBodyBGColor); }
+    .loader-text { background-image: linear-gradient(to right, var(--wdtPrimaryColor) 10%, var(--wdtHeadAltColor) 50%, var(--wdtPrimaryColor) 60%); }
+
+
+/*--------------------------------------------------------------
+    Responsive
+--------------------------------------------------------------*/
+
+    /*----*****---- << Mobile (Landscape) >> ----*****----*/
+
+    /* Note: Design for a width of 480px */
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    }
+
+
+    /* Common Styles for the devices below 479px width */
+
+    @media only screen and (max-width: 479px) {
+
+    }

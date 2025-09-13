@@ -1,0 +1,132 @@
+
+.dt-carousel-holder { /* margin-left: -10px; margin-right: -10px;*/ position: relative; }
+
+.dt-carousel-holder .swiper.swiper-vertical .swiper-wrapper .swiper-slide { overflow: hidden; }
+
+/* Pagination */
+.dt-carousel-holder .dt-carousel-pagination-wrapper { text-align: center; }
+.dt-carousel-holder .dt-carousel-pagination-wrapper .dt-swiper-pagination { position: static; }
+.dt-carousel-holder .dt-carousel-pagination-wrapper .dt-swiper-pagination:empty { display: none; }
+
+.dt-carousel-holder .swiper.swiper-horizontal + .dt-carousel-pagination-wrapper .dt-swiper-pagination { margin-top: 20px; }
+
+/* .dt-carousel-holder span.swiper-pagination-bullet.swiper-pagination-bullet-active { border: solid 3px; border-radius: 61px; background: red; } */
+
+/* Arrows */
+
+.dt-carousel-holder .dt-carousel-pagination-wrapper .dt-carousel-arrow-pagination { display: block; }
+.dt-carousel-holder .dt-carousel-pagination-wrapper .dt-carousel-arrow-pagination > div { 
+    /*background-color: transparent !important;*/ background-image: none !important; 
+    color: var(--wdt_Booking_AccentTxtColor); display: inline-flex; place-content: center; place-items: center; 
+    letter-spacing: 0; height: 35px; line-height: normal; margin: 1px; margin-top: 20px; padding: 0; position: relative; 
+    text-decoration: none; text-transform: none; vertical-align: top; width: 35px; z-index: 1; -webkit-border-radius: var(--wdtRadius_Zero); 
+    border-radius: var(--wdtRadius_Zero); -webkit-transition: var(--wdt_Booking_Ad-Transition); transition: var(--wdt_Booking_Ad-Transition); }
+
+.dt-carousel-holder .dt-carousel-pagination-wrapper .dt-carousel-arrow-pagination > div > i { 
+    color: inherit; display: inline-flex; place-content: center; place-items: center; 
+    font-size: inherit; height: 100%; margin: 0; padding: 5px; position: relative; width: 100%; z-index: 0; 
+    -webkit-transition: inherit; transition: inherit; }
+
+.dt-carousel-holder .swiper.swiper-horizontal + .dt-carousel-pagination-wrapper .dt-carousel-arrow-pagination { 
+    margin-left: 10px; margin-right: 10px; }
+
+
+/* Pagination - Dots or Bullets */
+
+.dt-carousel-holder .dt-carousel-pagination-wrapper .dt-swiper-pagination.swiper-pagination-bullets { 
+    display: inline-flex; place-content: center; place-items: center; width: auto; }
+.dt-carousel-holder .dt-carousel-pagination-wrapper .dt-swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet { 
+    /* background-color: transparent !important;  */
+    background-image: none !important; display: inline-flex; place-content: center; place-items: center; 
+    letter-spacing: 0; height: 14px; line-height: normal; margin: 6px; opacity: 1; padding: 0; position: relative; text-decoration: none; 
+    text-transform: none; vertical-align: top; width: 14px; z-index: 1; -webkit-border-radius: var(--wdtRadius_Zero); border-radius: var(--wdtRadius_Zero); 
+    -webkit-transition: var(--wdt_Booking_Ad-Transition); transition: var(--wdt_Booking_Ad-Transition); }
+
+.dt-carousel-holder .dt-carousel-pagination-wrapper .dt-swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet:hover,
+.dt-carousel-holder .dt-carousel-pagination-wrapper .dt-swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet-active { 
+    opacity: 1; background-color: var(--wdt_Booking_SecondaryColor); }
+
+
+
+/* Pagination - Fraction */
+
+.dt-carousel-holder .dt-carousel-pagination-wrapper .dt-swiper-pagination.swiper-pagination-fraction { 
+    background: transparent; color: var(--wdt_Booking_HeadAltColor); display: inline-flex; place-items: center; height: auto; 
+    line-height: 1; margin-left: auto; margin-right: auto; padding: 0 20px; width: auto;  margin-top: 0 !important; }
+
+.dt-carousel-holder .dt-carousel-pagination-wrapper .dt-swiper-pagination.swiper-pagination-fraction > * { 
+    display: inline-block; margin: 0; vertical-align: top; font-size: var(--wdtFontSize_H5);}
+
+
+/* Pagination - ScrollBar */
+
+.dt-carousel-holder .dt-carousel-pagination-wrapper .dt-swiper-scrollbar { 
+    float: left; height: 6px; margin: 20px 0 0; opacity: 1 !important; position: relative; width: 100%; 
+    z-index: 0; -webkit-border-radius: 10px; border-radius: 10px; background-color: transparent;
+    background-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 17%, rgba(0,0,0,0.1) 83%, rgba(0,0,0,0) 100%);
+}
+
+.dt-carousel-holder .dt-carousel-pagination-wrapper .dt-swiper-scrollbar:before,
+.dt-carousel-holder .dt-carousel-pagination-wrapper .dt-swiper-scrollbar:after { content: ""; height: 100%; opacity: 0.6; position: absolute; bottom: 0; left: 0; right: 0; top: 0; width: 100%; z-index: -1; -webkit-border-radius: inherit; border-radius: inherit;
+    background-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 17%, rgba(0,0,0,0.1) 83%, rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 );
+}
+
+.dt-carousel-holder .dt-carousel-pagination-wrapper .dt-swiper-scrollbar:before,
+.dt-carousel-holder .dt-carousel-pagination-wrapper .dt-swiper-scrollbar:after { height: auto; margin: 0; width: 100%; }
+
+.dt-carousel-holder .dt-carousel-pagination-wrapper .dt-swiper-scrollbar .swiper-scrollbar-drag { 
+    background-color: currentColor; color: var(--wdt_Booking_PrimaryColor); border-radius: inherit; }
+
+
+.dt-carousel-holder .swiper.swiper-vertical + .dt-carousel-pagination-wrapper .dt-swiper-scrollbar { height: 100%; margin: 0; position: absolute; left: 100%; top: 0; width: 8px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 17%, rgba(0,0,0,0.1) 83%, rgba(0,0,0,0) 100%);
+}
+
+.dt-carousel-holder .swiper.swiper-vertical + .dt-carousel-pagination-wrapper .dt-swiper-scrollbar:before,
+.dt-carousel-holder .swiper.swiper-vertical + .dt-carousel-pagination-wrapper .dt-swiper-scrollbar:after { height: 100%; margin: 0; width: auto;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 17%, rgba(0,0,0,0.1) 83%, rgba(0,0,0,0) 100%);
+}
+
+.dt-carousel-holder .swiper.swiper-vertical[data-settings*="scrollbar"] { padding-right: 10px; }
+.dt-carousel-holder .swiper.swiper-vertical[data-settings*="scrollbar"] + .dt-carousel-pagination-wrapper .dt-swiper-scrollbar { 
+    left: auto; right: 0; }
+
+
+/* Pagination - Progress */
+
+.dt-carousel-holder .dt-carousel-pagination-wrapper .swiper-pagination-progressbar { float: left; height: 6px; overflow: hidden; 
+    position: relative; width: 100%; z-index: 0; -webkit-border-radius: 10px; border-radius: 10px; background-color: transparent; 
+    background-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 17%, rgba(0,0,0,0.1) 83%, rgba(0,0,0,0) 100%);
+}
+
+.dt-carousel-holder .dt-carousel-pagination-wrapper .swiper-pagination-progressbar:before,
+.dt-carousel-holder .dt-carousel-pagination-wrapper .swiper-pagination-progressbar:after { 
+    content: ""; height: 100%; opacity: 0.6; position: absolute; bottom: 0; left: 0; right: 0; top: 0; width: 100%; 
+    z-index: -1; -webkit-border-radius: inherit; border-radius: inherit;
+    background-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 17%, rgba(0,0,0,0.1) 83%, rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 );
+}
+
+.dt-carousel-holder .dt-carousel-pagination-wrapper .swiper-pagination-progressbar:before,
+.dt-carousel-holder .dt-carousel-pagination-wrapper .swiper-pagination-progressbar:after { height: auto; margin: 0; width: 100%; }
+
+
+.dt-carousel-holder .swiper.swiper-vertical + .dt-carousel-pagination-wrapper .swiper-pagination-progressbar { 
+    height: 100%; margin: 0; position: absolute; left: 100%; top: 0; width: 8px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 17%, rgba(0,0,0,0.1) 83%, rgba(0,0,0,0) 100%);
+}
+
+.dt-carousel-holder .swiper.swiper-vertical + .dt-carousel-pagination-wrapper .swiper-pagination-progressbar:before,
+.dt-carousel-holder .swiper.swiper-vertical + .dt-carousel-pagination-wrapper .swiper-pagination-progressbar:after { 
+    height: 100%; margin: 0; width: auto;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 17%, rgba(0,0,0,0.1) 83%, rgba(0,0,0,0) 100%);
+}
+
+.dt-carousel-holder .dt-carousel-pagination-wrapper .swiper-pagination-progressbar .swiper-pagination-progressbar-fill { 
+    background-color: currentColor; color: var(--wdt_Booking_PrimaryColor); border-radius: inherit; }
+
+
+.dt-carousel-holder .swiper.swiper-vertical[data-settings*="progressbar"] { padding-right: 10px; }
+.dt-carousel-holder .swiper.swiper-vertical[data-settings*="progressbar"] + .dt-carousel-pagination-wrapper .swiper-pagination-progressbar { 
+    left: auto; right: 0; }

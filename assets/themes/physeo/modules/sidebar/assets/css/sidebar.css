@@ -1,0 +1,86 @@
+/*--------------------------------------------------------------
+	Sidebar Widget Area
+--------------------------------------------------------------*/
+
+    #secondary.secondary-sidebar { margin-bottom: 120px; }
+    .secondary-sidebar .widget:last-child { margin-bottom: 0px; }
+    .secondary-sidebar .widgettitle { display: inline-block; float: none; margin-top: 0; width: 100%; }
+    .secondary-sidebar .widgettitle:before, .secondary-sidebar .widgettitle:after { content:""; }
+    .secondary-sidebar .widgettitle:empty { display: none; }
+    .secondary-sidebar .widgettitle > a { color: currentColor; }
+    .secondary-sidebar > div[class^="type"] { overflow: hidden; }
+
+/*--------------------------------------------------------------
+	Sidebar Toggle Style
+--------------------------------------------------------------*/
+
+    .secondary-sidebar .wdt-sidebar-wrapper.wdt-sidebartoogle-wrapper .widget {
+        border-bottom: 1px solid var(--wdtBorderColor); margin: 0; }
+    .secondary-sidebar .wdt-sidebar-wrapper.wdt-sidebartoogle-wrapper .widget .widget-toggle-group {
+		position: relative; cursor: pointer; display: flex; align-items: center; justify-content: space-between; padding: 16px 0; }
+    .secondary-sidebar .wdt-sidebar-wrapper.wdt-sidebartoogle-wrapper .widget:first-child .widget-toggle-group { padding-top: 0; }
+    .secondary-sidebar .wdt-sidebar-wrapper.wdt-sidebartoogle-wrapper .widget .widget-toggle-group .widget-toggle {
+        position: relative; font-family: var(--wdtFontTypo_Alt); font-size: var(--wdtFontSize_H5); 
+        font-weight: var(--wdtFontWeight_Alt); line-height: var(--wdtLineHeight_Alt); text-transform: capitalize; }
+    .secondary-sidebar .wdt-sidebar-wrapper.wdt-sidebartoogle-wrapper .widget .widget-toggle-group ~ div,
+    .secondary-sidebar .wdt-sidebar-wrapper.wdt-sidebartoogle-wrapper .widget .widget-toggle-group ~ form,
+    .secondary-sidebar .wdt-sidebar-wrapper.wdt-sidebartoogle-wrapper .widget .widget-toggle-group ~ ul {     
+        padding-top: 5px; padding-bottom: 14px; -webkit-transition: all .3s ease; transition: all .3s ease; }
+    .secondary-sidebar .wdt-sidebar-wrapper.wdt-sidebartoogle-wrapper .widget.widget_nav_menu ul.menu > li:last-of-type:not(:has(> ul.sub-menu)) > a { border-bottom: none; }
+    .secondary-sidebar .wdt-sidebar-wrapper.wdt-sidebartoogle-wrapper .widget .widget-toggle-group .wdt-dropdown-arrow {
+        position: relative; width: 15px; height: 15px; display: flex; align-items: center; justify-content: center; }
+    .secondary-sidebar .wdt-sidebar-wrapper.wdt-sidebartoogle-wrapper .widget .widget-toggle-group .wdt-dropdown-arrow::after {
+        content: ""; display: inline-block; position: relative; width: 10px; height: 10px; top: auto; 
+        left: 0; right: 0; bottom: 2px; border-width: 0 2px 2px 0; border-style: solid; border-color: currentColor; 
+        -webkit-transform: rotate(45deg); transform: rotate(45deg); -webkit-transition: all .3s ease; 
+        transition: all .3s ease; margin: auto; }
+    .secondary-sidebar .wdt-sidebar-wrapper.wdt-sidebartoogle-wrapper .widget .widget-toggle-group .wdt-dropdown-arrow.rotate-icon::after { -webkit-transform: rotate(180deg); transform: rotate(225deg); bottom: -2px; }
+    .secondary-sidebar .wdt-sidebar-wrapper.wdt-sidebartoogle-wrapper .widget .select2-container { width: 100% !important; }
+
+/*--------------------------------------------------------------
+	Colors
+--------------------------------------------------------------*/
+
+    .secondary-sidebar .widgettitle,
+    .secondary-sidebar .widget ul li > a, .secondary-sidebar .tagcloud a { color: var(--wdtAccentTxtColor); }
+    .secondary-sidebar .widgettitle a { color: inherit; }
+    .secondary-sidebar .tagcloud a:hover { color:var(--wdtAccentTxtColor); }
+
+/*--------------------------------------------------------------
+    Accents
+--------------------------------------------------------------*/
+
+    /* Primary Color */
+    .secondary-sidebar .widget ul li > a:hover { color: var(--wdtLinkHoverColor); }
+
+/*--------------------------------------------------------------
+	Responsive
+--------------------------------------------------------------*/
+
+    @media only screen and (min-width:1281px) and (max-width:1540px) {
+        .secondary-sidebar .widget #wp-calendar th { font-size: var(--wdtFontSize_Ext); }
+        .secondary-sidebar .widget #wp-calendar td { font-size: var(--wdtFontSize_Ext); }
+    }
+
+    @media only screen and (min-width:1025px) and (max-width:1280px) {
+        .secondary-sidebar .widget #wp-calendar td { font-size: calc(var(--wdtFontSize_Ext) - 2px); }
+        .secondary-sidebar .widget #wp-calendar th { font-size: calc(var(--wdtFontSize_Ext) - 2px); }
+        .secondary-sidebar .widget_tag_cloud .tagcloud a, .secondary-sidebar .widget .tagcloud a { 
+                   font-size: var(--wdtFontSize_H6);padding: 8px 15px; }
+        #select2-archives-dropdown--1-results, #select2-cat-results { font-size: calc(var(--wdtFontSize_Ext) - 1px); }
+    }
+
+	@media only screen and (max-width: 767px) {
+		.secondary-sidebar .widget #wp-calendar th, .secondary-sidebar .widget #wp-calendar td { 
+            font-size: var(--wdtFontSize_Ext); }
+	}
+
+    /*--------------------------------------------------------------
+        Sidebar - Default-Value
+    --------------------------------------------------------------*/
+
+    @media only screen and (min-width:1281px) and (max-width:1540px) { #secondary.secondary-sidebar { margin-bottom: 100px; } }
+    @media only screen and (min-width:1025px) and (max-width:1280px) { #secondary.secondary-sidebar { margin-bottom: 80px; } }
+    @media only screen and (min-width:768px) and (max-width:1024px) { #secondary.secondary-sidebar { margin-bottom: 70px; } }
+    @media only screen and (min-width:480px) and (max-width:767px) { #secondary.secondary-sidebar { margin-bottom: 60px; } }
+    @media only screen and (max-width: 479px) { #secondary.secondary-sidebar { margin-bottom: 60px; } }

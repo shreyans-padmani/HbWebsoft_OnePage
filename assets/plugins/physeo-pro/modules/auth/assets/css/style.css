@@ -1,0 +1,734 @@
+/*==== Registration Common ====*/
+
+body.page-template-tpl-registration #main>.container>.container {
+    padding: 0;
+}
+
+.wdt-custom-auth-form #main {
+    margin-bottom: 130px;
+}
+
+.mu_register h2 {
+    font-size: clamp(1.375rem, 1.3462rem + 0.1282vw, 1.5rem);
+    /* Min-22 & Max-24 */
+}
+
+.physeo-pro-title.physeo-pro-login-title h2,
+.wdt-registration-form .physeo-custom-auth-sc-border-title h2 {
+    color: var(--wdtAccentTxtColor);
+    font-size: clamp(1.875rem, 1.5841rem + 0.9715vw, 2.75rem);
+    /* Min-30 & Max-44 */
+    font-weight: var(--wdtFontWeight_Alt);
+    text-transform: capitalize;
+}
+
+.physeo-pro-title.physeo-pro-login-title h2 .physeo-pro-login-title strong {
+    font-weight: var(--wdtFontWeight_Alt);
+}
+
+.wdt-registration-form .physeo-custom-auth-register-alert {
+    margin: 15px 0;
+    text-align: center;
+}
+
+#signup-content .mu_register>h2:first-child {
+    margin-top: 0;
+}
+
+#signup-content .mu_register>p:last-child {
+    margin-bottom: 0;
+}
+
+/* Registration Form */
+
+.wdt-registration-form {
+    padding: clamp(1.875rem, 1rem + 4.375vw, 6.25rem);
+    /* 100px to 30px */
+    background-color: var(--wdtPrimaryColor);
+    color: var(--wdtAccentTxtColor);
+    width: 100%;
+    max-width: 930px;
+    border: none;
+    -webkit-border-radius: var(--wdtRadius_3X);
+    border-radius: var(--wdtRadius_3X);
+    margin: 0 auto;
+
+    background-image: url(https://physeo.wpengine.com/wp-content/themes/physeo/assets/images/Home-1-exray-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin-bottom: 120px;
+}
+
+.wdt-registration-form input[type="text"],
+.wdt-registration-form input[type="email"],
+.wdt-registration-form input[type="url"],
+.wdt-registration-form input[type="password"],
+.wdt-registration-form input[type="search"],
+.wdt-registration-form input[type="number"],
+.wdt-registration-form input[type="tel"],
+.wdt-registration-form input[type="date"],
+.wdt-registration-form input[type="month"],
+.wdt-registration-form input[type="week"],
+.wdt-registration-form input[type="time"],
+.wdt-registration-form input[type="datetime"],
+.wdt-registration-form input[type="datetime-local"],
+.wdt-registration-form input[type="color"],
+.wdt-registration-form textarea {
+    background: var(--wdtAccentTxtColor);
+    color: var(--wdtHeadAltColor);
+}
+
+.wdt-registration-form form {
+    margin-top: clamp(1.25rem, 1.0832rem + 0.9202vw, 2.1875rem);
+    /* 20px to 35px */
+}
+
+.wdt-registration-form .physeo-custom-auth-sc-border-title h2 {
+    text-align: center;
+    margin: 0 0 clamp(0.5rem, 0.45rem + 0.25vw, 0.75rem);
+    /* 12px to 8px */
+}
+
+.wdt-registration-form p {
+    text-align: center;
+    font-weight: var(--wdtFontWeight_Base);
+    margin: 0;
+}
+
+.wdt-registration-form p strong {
+    font-weight: var(--wdtFontWeight_Base);
+}
+
+.wdt-registration-form form p {
+    color: var(--wdtAccentTxtColor);
+}
+
+.wdt-registration-form form p:last-child {
+    text-align: center;
+}
+
+.wdt-registration-form form p a.physeo-pro-login-link {
+    font-weight: var(--wdtFontWeight_Ext);
+    color: var(--wdtAccentTxtColor);position: relative; 
+}
+
+.wdt-registration-form form p a.physeo-pro-login-link:hover,
+.physeo-pro-login-form-container .physeo-pro-login-form .physeo-pro-login-form-holder p.tpl-forget-pwd a:hover,
+.physeo-pro-login-form-holder > .tpl-create-account a:hover { color: var(--wdtLinkHoverColor); }
+
+.wdt-registration-form form p a.physeo-pro-login-link::before,
+.physeo-pro-login-form-container .physeo-pro-login-form .physeo-pro-login-form-holder p.tpl-forget-pwd a::before,
+.physeo-pro-login-form-holder > .tpl-create-account a::before{
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: currentColor;
+        transition: var(--wdtBaseTransition); transform:translateX(0);
+    }
+.wdt-registration-form form p a.physeo-pro-login-link:hover::before,
+.physeo-pro-login-form-container .physeo-pro-login-form .physeo-pro-login-form-holder p.tpl-forget-pwd a:hover::before,
+.physeo-pro-login-form-holder > .tpl-create-account a:hover::before{
+         transform:translateY(3px);
+         background-color:var(--wdtSecondaryColor);
+    }
+.wdt-registration-form form p a.physeo-pro-login-link::after,
+.physeo-pro-login-form-container .physeo-pro-login-form .physeo-pro-login-form-holder p.tpl-forget-pwd a::after,
+.physeo-pro-login-form-holder > .tpl-create-account a::after{
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0%;
+        height: 1px;
+        background-color:var(--wdtSecondaryColor);
+        transition: var(--wdtBaseTransition);
+        /* opacity: 0; */
+    }
+.wdt-registration-form form p a.physeo-pro-login-link:hover::after,
+.physeo-pro-login-form-container .physeo-pro-login-form .physeo-pro-login-form-holder p.tpl-forget-pwd a:hover::after,
+.physeo-pro-login-form-holder > .tpl-create-account a:hover::after {
+        width: 100%;
+        left: auto;
+        right: 0;
+    }
+
+.wdt-registration-form form#loginform {
+    display: grid;
+    gap: clamp(0.875rem, 0.8rem + 0.375vw, 1.25rem);
+    grid-template-columns: repeat(2, 1fr);
+}
+/* .wdt-registration-form #loginform p:nth-child(7){display: none;} */
+.wdt-registration-form form p.submit,
+.wdt-registration-form #loginform p:last-child{grid-column: span 2;}
+
+.physeo-pro-login-description {
+    text-align: center;
+}
+
+.wdt-registration-form input[type="submit"] {
+    width: 100%;
+}
+
+.wdt-registration-form input[type="submit"]:hover{
+    background: var(--wdtAccentTxtColor);
+    color: var(--wdtPrimaryColor);
+}
+
+.physeo-pro-login-form-holder #loginform {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    grid-gap: 12px 20px;
+    margin: 0;
+}
+
+.physeo-pro-login-form-holder #loginform input {
+    background: var(--wdtAccentTxtColor);
+    color: var(--wdtHeadAltColor);
+}
+
+.physeo-pro-login-form-holder #loginform p {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+}
+
+.physeo-pro-login-form-holder #loginform p input[type="submit"] {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 10px 0;
+}
+
+.physeo-pro-login-form-holder #loginform label:not([for="rememberme"]) {
+    display: none;
+}
+
+.physeo-pro-login-form-holder #loginform label #rememberme {
+    margin-top: -4px;
+    margin-right: 8px;
+}
+
+.physeo-pro-login-form-holder #loginform>#physeo-rememberme-wrapper {
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-column: span 2;
+    margin: 8px 0;
+}
+
+.physeo-pro-login-form-holder #loginform > #physeo-rememberme-wrapper>* {
+    width: auto;
+}
+
+.physeo-pro-login-form-holder #loginform > button#wp-submit { margin: 0; grid-column: span 2;  }
+.physeo-pro-login-form-holder #loginform > button#wp-submit:hover{background-color: var(--wdtAccentTxtColor); color: var(--wdtPrimaryColor);}
+
+.physeo-pro-login-form-holder > .tpl-create-account { text-align: center; margin-bottom: 0; }
+
+.physeo-pro-login-form-holder > .tpl-create-account a { color: var(--wdtAccentTxtColor); position: relative;}
+
+/* Login form */
+html:has(> body > .physeo-pro-login-form-container:not([style="display: none;"])) {
+    overflow: hidden;
+}
+
+.physeo-pro-login-form-container {
+    display: block;
+    height: 100% !important;
+    margin: 0;
+    padding: 0;
+    pointer-events: none;
+    width: 100%;
+    z-index: 10000;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.physeo-pro-login-form-overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+    background: rgb(var(--wdtHeadAltColorRgb), .95);
+    cursor: url(../images/pop-close.png) 25 25, auto;
+}
+
+.physeo-pro-login-form-container .physeo-pro-login-form .physeo-pro-login-form-wrapper {
+    padding: clamp(1.875rem, 1.5414rem + 1.8405vw, 3.75rem); /*60px - 30px*/
+    border-radius: var(--wdtRadius_3X);
+    -webkit-border-radius: var(--wdtRadius_3X);
+    width: 930px;
+    background-color: var(--wdtPrimaryColor);
+    color: var(--wdtAccentTxtColor);
+    height: fit-content;
+    overflow-y: auto;
+    max-height: calc(100vh - 2* 1.5em);
+    pointer-events: all;
+
+    background-image: url(https://physeo.wpengine.com/wp-content/themes/physeo/assets/images/Home-1-exray-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.physeo-pro-login-form-container .physeo-pro-login-form .physeo-pro-login-form-wrapper>div[class*="physeo-pro-social"] {
+    display: block;
+    text-align: center;
+}
+
+.physeo-pro-login-form-container .physeo-pro-login-form .physeo-pro-login-form-wrapper>div[class*="physeo-pro-social"]>div[class$="-divider"] {
+    margin: clamp(1.25rem, 1.125rem + 0.625vw, 1.875rem) 0; /*30px - 20px*/
+}
+
+.login-form-custom-logo {
+    text-align: center;
+    margin: 10px 0;
+    margin-bottom: clamp(1.25rem, 1rem + 1.25vw, 2.5rem); /*min-20px - max-40px*/
+}
+
+.login-form-custom-logo img {
+    max-width: 170px;
+}
+
+.physeo-pro-login-form-container .physeo-pro-login-form {
+    display: grid;
+    padding: 0;
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    place-content: center;
+}
+
+.physeo-pro-login-form-container .physeo-pro-login-form .physeo-pro-login-form-wrapper .physeo-pro-login-form-holder #login-message {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.physeo-pro-login-form-container .physeo-pro-login-form .physeo-pro-login-form-wrapper .physeo-pro-login-form-holder #login-message .error{color: #c62828;}
+
+.physeo-pro-login-form-container .physeo-pro-login-form .physeo-pro-login-form-wrapper .physeo-pro-login-form-holder #login-message:empty {
+    display: none;
+}
+
+.physeo-pro-login-form-container .physeo-pro-login-form .physeo-pro-title.physeo-pro-login-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:clamp(1.875rem, 1.625rem + 1.25vw, 3.125rem); /*min-30px - max-50px*/
+}
+
+#loginform .login-username,
+#loginform .login-password {
+    width: 100%;
+}
+
+#loginform .login-remember {
+    text-align: left;
+}
+
+#loginform p.login-remember input[type="checkbox"] {
+    opacity: 1;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1em;
+    height: 1em;
+    border: 1px solid var(--wdtBorderColor);
+    transform: translateY(-0.075em);
+    display: inline-grid;
+    place-content: center;
+    background: rgba(var(--wdtTertiaryColorRgb), .0);
+    border-radius: 2px;
+    padding: 0 0;
+    margin-right: 5px;
+}
+
+#loginform p.login-remember input[type="checkbox"]:after {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--wdtPrimaryColor);
+}
+
+#loginform p.login-remember input[type="checkbox"]:checked:after {
+    transform: scale(1);
+}
+
+.physeo-pro-social-logins-divider {
+    display: none;
+    text-align: center;
+    position: relative;
+    margin: clamp(1.25rem, 1.125rem + 0.625vw, 1.875rem) 0;
+    /*30px - 20px*/
+}
+
+.physeo-pro-title.physeo-pro-login-title h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.physeo-pro-login-form-container .physeo-pro-login-form .physeo-pro-login-form-holder p.tpl-forget-pwd {
+    margin-bottom: 0px;
+}
+
+.physeo-pro-login-form-container .physeo-pro-login-form .physeo-pro-login-form-holder p.tpl-forget-pwd a {
+    color: var(--wdtAccentTxtColor);
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear; position: relative;
+}
+
+
+
+a.physeo-pro-social-facebook-connect,
+a.physeo-pro-social-google-connect {
+    width: fit-content;
+    padding: var(--wdtPadding_MiniBtn);
+    display: inline-block;
+    text-align: center;
+    background: var(--wdtAccentTxtColor);
+    color: var(--wdtHeadAltColor);
+    border-radius: var(--wdtRadius_Part);
+    box-shadow: unset;
+    border: unset;
+    margin: 6px 10px;
+    font-size: var(--wdtFontSize_Base);
+    font-weight: var(--wdtFontWeight_Ext);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    will-change: transform;
+    isolation: isolate;
+    -webkit-transition: var(--wdtBaseTransition);
+    transition: var(--wdtBaseTransition);
+}
+
+a.physeo-pro-social-facebook-connect:hover{
+    background-color: var(--wdtSecondaryColor);
+    color: var(--wdtAccentTxtColor);
+    border-color: var(--wdtPrimaryColor);
+    backface-visibility: hidden;
+    will-change: transform;
+    isolation: isolate;
+}
+
+a.physeo-pro-social-facebook-connect i,
+a.physeo-pro-social-google-connect i {
+    margin-right: 10px;
+}
+
+.physeo-pro-login-form-container {
+    margin: auto;
+    max-height: calc(100vh - 2*1.5em);
+    pointer-events: none;
+}
+
+/* Login and Registor Form Style */
+/* .wdt-registration-form form p:not(:last-child) {
+    margin-bottom: clamp(0.875rem, 0.8rem + 0.375vw, 1.25rem);/* 20px to 14px */
+
+
+a.physeo-pro-social-google-connect>svg {
+    margin-right: 10px;
+}
+
+.physeo-pro-social-logins-divider {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+}
+
+.physeo-pro-social-logins-divider:before,
+.physeo-pro-social-logins-divider:after {
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--wdtBorderColor);
+}
+
+.physeo-pro-social-logins-divider:before {
+    margin-right: 16px;
+}
+
+.physeo-pro-social-logins-divider:after {
+    margin-left: 16px;
+}
+
+
+/*--------------------------------------------------------------
+	Responsive
+--------------------------------------------------------------*/
+
+@media only screen and (max-width:1540px) {
+    .physeo-pro-login-form #loginform {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    #loginform .login-username,
+    #loginform .login-password {
+        margin-bottom: 20px;
+    }
+
+    .physeo-pro-login-form-container {
+        overflow: scroll;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width: 767px) {
+    .physeo-pro-login-form-container {
+        margin: auto;
+    }
+}
+
+/* @media screen and (max-width: 479px) {
+
+} */
+
+
+/*==== Registration Step-II */
+
+.mu_register {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 50px;
+    background: transparent;
+    box-shadow: none;
+    border-radius: var(--wdtRadius_Zero);
+    border: 1px solid var(--wdtBorderColor);
+}
+
+#signup-content .mu_register input[type="submit"] {
+    margin: 0;
+}
+
+#signup-content .mu_register #blog_title,
+#signup-content .mu_register #user_email,
+#signup-content .mu_register #blogname,
+#signup-content .mu_register #user_name {
+    width: 100%;
+    font-size: initial;
+    margin: 0 0 18px;
+    box-sizing: border-box;
+}
+
+.mu_register form .wp-signup-username-description,
+.mu_register form .wp-signup-email-description {
+    margin-bottom: 15px;
+}
+
+.mu_register p.submit {
+    margin-top: 20px;
+}
+
+.mu_register form p.submit input[type="submit"] {
+    font-size: var(--wdtFontSize_Base);
+}
+
+@media screen and (max-width: 1024px) {
+    .physeo-pro-login-form-container .physeo-pro-login-form .physeo-pro-login-form-wrapper {
+        margin: 0 30px;
+        width: calc(100% - 60px);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .physeo-pro-login-form-container .physeo-pro-login-form .physeo-pro-login-form-wrapper {
+        margin: 0 20px;
+        width: calc(100% - 40px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .physeo-pro-login-form-holder #loginform {
+        grid-template-columns: 1fr;
+    }
+    .physeo-pro-login-form-holder #loginform > #physeo-rememberme-wrapper,
+    .physeo-pro-login-form-holder #loginform > button#wp-submit {
+        grid-column: unset;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .mu_register {
+        padding: 30px;
+    }
+}
+
+/* Registration Form Response Style */
+
+.physeo-custom-auth-register-alert {
+    display: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: var(--wdtRadius_1X);
+    background-color: var(--wdtTertiaryColor);
+    color: #c62828;
+}
+
+.physeo-custom-auth-register-alert-error,
+.physeo-custom-auth-register-alert.error {
+    background-color: var(--wdtTertiaryColor);
+    /* Light red background */
+    color: #c62828;
+    /* Dark red text */
+    border-color: #c62828;
+    /* Dark red border */
+}
+
+.physeo-custom-auth-register-alert-success,
+.physeo-custom-auth-register-alert.success {
+    background-color: var(--wdtTertiaryColor);
+    /* Light green background */
+    color: #2e7d32;
+    /* Dark green text */
+    border-color: #2e7d32;
+    /* Dark green border */
+}
+
+/* --------Socail Icons------ */
+
+a.physeo-pro-social-facebook-connect i,
+a.physeo-pro-social-google-connect i {
+    margin-right: 10px;
+}
+
+a.physeo-pro-social-google-connect i {
+    position: relative;
+    top: -2px;
+}
+
+a.physeo-pro-social-google-connect i svg path.google-color-1 {
+    fill: rgb(72, 136, 244);
+}
+a.physeo-pro-social-google-connect i svg path.google-color-2 {
+    fill: rgb(60, 169, 90);
+}
+
+a.physeo-pro-social-google-connect i svg path.google-color-3 {
+    fill: rgb(249, 191, 21);
+}
+
+a.physeo-pro-social-google-connect i svg path.google-color-4 {
+    fill: rgb(234, 78, 66);
+}
+
+a.physeo-pro-social-facebook-connect i {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: var(--wdtFontWeight_H6);
+    background-color: rgb(24, 91, 176);
+    color: var(--wdtAccentTxtColor);
+    border-radius: var(--wdtLetterSpacing_3X);
+    -webkit-border-radius: var(--wdtLetterSpacing_3X);
+}
+
+
+/* Registration Form Response Spinner */
+
+.physeo-custom-auth-spinner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.spinner {
+    border: 4px solid #f3f3f3;
+    /* Light grey */
+    border-top: 4px solid #3498db;
+    /* Blue */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@media only screen and (min-width:1281px) and (max-width:1540px) {
+    .wdt-registration-form {
+        margin-bottom: 100px;
+    }
+}
+
+@media only screen and (min-width:1025px) and (max-width:1280px) {
+    .wdt-registration-form {
+        margin-bottom: 80px;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    .wdt-registration-form {
+        margin-bottom: 70px;
+    }
+}
+
+@media only screen and (min-width:480px) and (max-width:767px) {
+    .wdt-registration-form {
+        margin-bottom: 60px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .wdt-registration-form form#loginform {
+    grid-template-columns: repeat(1, 1fr);
+}
+.wdt-registration-form form p.submit,
+.wdt-registration-form #loginform p:last-child{grid-column: unset;}
+}
+
+
+@media only screen and (max-width: 479px) {
+    .wdt-registration-form {
+        margin-bottom: 60px;
+    }
+}

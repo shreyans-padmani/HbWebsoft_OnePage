@@ -1,0 +1,73 @@
+/*--------------------------------------------------------------*/
+    /* #region - Add-to-Cart Notification Widget */
+/*--------------------------------------------------------------*/
+
+    .wdt-shop-cart-widget.cart-notification-widget, .wdt-shop-cart-widget.cart-notification-widget .wdt-shop-cart-widget-inner,
+    .wdt-shop-cart-widget.cart-notification-widget .wdt-shop-cart-widget-content { 
+        float: left; width: 100%; }
+
+    .wdt-shop-cart-widget.cart-notification-widget .wdt-shop-cart-widget-close-button { 
+        font-size: 0; height: 25px; line-height: 0; position: absolute; right: 3px; top: 3px; 
+        text-align: center; width: 25px; -webkit-border-radius: 50%; border-radius: 50%; }
+
+    .wdt-shop-cart-widget.cart-notification-widget .wdt-shop-cart-widget-close-button:before { 
+        content: "\2716"; display: block; font-size: var(--wdtFontSize_Ext); 
+        font-weight: var(--wdtFontWeight_Base); line-height: 25px; }
+
+    .wdt-shop-cart-widget.cart-notification-widget { 
+        max-width: 500px; position: fixed; bottom: 32px; left: 18px; width: auto; z-index: 999; 
+        -webkit-transition: var(--wdtBaseTransition); transition: var(--wdtBaseTransition); }
+
+    .wdt-shop-cart-widget.cart-notification-widget .wdt-shop-cart-widget-inner { padding: 20px; }
+
+    .wdt-shop-cart-widget.cart-notification-widget .wdt-shop-cart-widget-content > * { 
+        display: table-cell; vertical-align: middle; }
+
+    .wdt-shop-cart-widget.cart-notification-widget .wdt-shop-cart-widget-content-thumb { 
+        line-height: 0; padding: 0 10px; width: 120px; }
+
+    .wdt-shop-cart-widget.cart-notification-widget .wdt-shop-cart-widget-content-info { padding: 5px 10px; text-align: left; }
+
+    .wdt-shop-cart-widget.cart-notification-widget .wdt-shop-cart-widget-content-thumb a,
+    .wdt-shop-cart-widget.cart-notification-widget .wdt-shop-cart-widget-content-thumb a img { display: block; width: 100%; }
+
+    .wdt-shop-cart-widget.cart-notification-widget .wdt-shop-cart-widget-content-info a { 
+        display: block; font-size: var(--wdtFontSize_H6); font-weight: var(--wdtFontWeight_Alt); }
+
+    .wdt-shop-cart-widget.cart-notification-widget { opacity: 0; visibility: hidden; }
+    .wdt-shop-cart-widget.cart-notification-widget.wdt-shop-cart-widget-active { opacity: 1; visibility: visible; }
+
+    .wdt-shop-cart-widget.cart-notification-widget { background-color: var(--wdtBodyBGColor); }
+
+    .wdt-shop-cart-widget.cart-notification-widget .wdt-shop-cart-widget-close-button:before { color: var(--wdtAccentTxtColor); }
+
+    .wdt-shop-cart-widget.cart-notification-widget { 
+        -webkit-box-shadow: 0 1px 3px 1px rgba(var(--wdtHeadAltColorRgb),0.25); 
+        box-shadow: 0 1px 3px 1px rgba(var(--wdtHeadAltColorRgb),0.25); }
+
+/* #endregion - Add-to-Cart Notification Widget */
+
+
+/*--------------------------------------------------------------*/
+    /* #region - Add-to-Cart Sidebar Widget */
+/*--------------------------------------------------------------*/
+
+    .wdt-shop-cart-widget.activate-sidebar-widget { 
+        height: 100%; position: fixed; right: 0; top: 0; width: 350px; z-index: 999992;
+         -webkit-transform: translateX(100%); transform: translateX(100%); 
+         -webkit-transition: var(--wdtBaseTransition); transition: var(--wdtBaseTransition); }
+
+    .wdt-shop-cart-widget.activate-sidebar-widget:before { content: ""; }
+
+    .wdt-shop-cart-widget.activate-sidebar-widget.wdt-shop-cart-widget-active { 
+        -webkit-transform: translateX(0); transform: translateX(0); }
+
+    .wdt-shop-cart-widget[class*="sidebar"] .wdt-shop-cart-widget-inner { 
+        height: 100%; padding: 45px 0 120px; position: relative; }
+
+    .wdt-shop-cart-widget[class*="sidebar"] .wdt-shop-cart-widget-header { 
+        border-width: 0 0 1px; padding-left: 15px; padding-right: 45px; 
+        position: absolute; left: 0; top: 0; width: 100%; }
+
+    .wdt-shop-cart-widget[class*="sidebar"] .wdt-shop-cart-widget-header h3 { 
+        font-size: var(--wdtFontSize_Base); fo

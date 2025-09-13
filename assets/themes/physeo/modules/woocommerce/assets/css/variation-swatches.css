@@ -1,0 +1,159 @@
+/*--------------------------------------------------------------
+ 	Listing Page Swatchus Style
+--------------------------------------------------------------*/
+
+/*==== Common Styles ====*/
+
+.product_swatch { cursor: pointer; }
+.product_swatch:not(.available) { pointer-events: none; opacity: 0.5; cursor: not-allowed !important; }
+.swiper.primary-image-wrapper .swiper-slide { width: 100% !important; }
+.product_swatch.proswatch-material { background-size: cover; background-position: center; }
+.woocommerce ul.products li.product .product-wrapper .attribute-swatchesselectbox { display: none !important; }
+
+/*** View Cart - Button ***/
+.woocommerce ul.products li.product .product-buttons-wrapper.product-button .add_to_cart_variantbutton.added { display: none; }
+
+
+/*==== Thumb Group - Swatchus Style ====*/
+
+.woocommerce ul.products li.product .product-wrapper .product-thumb .product-thumb-content > div:has(> .product-element-group-items:only-child .variation-swatches) { margin: 0 1px; }
+.woocommerce ul.products li.product .product-wrapper .product-thumb .product-thumb-content .product-element-group-wrapper:has(> .product-element-group-items:only-child .variation-swatches) { 
+    position: relative; overflow: hidden; background: rgba(var(--wdtAccentTxtColorRgb), 0.5); 
+    backdrop-filter: blur(5px); padding: 10px; backface-visibility: hidden; will-change: transform; 
+    isolation: isolate; -webkit-border-radius: var(--wdtRadius_3X); border-radius: var(--wdtRadius_3X); }
+.woocommerce ul.products li.product .product-wrapper .product-thumb .variation-swatches .attribute-swatches {
+    width: 100%; max-width: 100%; display: inline-flex; flex-wrap: wrap; justify-content: center; }
+.woocommerce ul.products li.product .product-wrapper .product-thumb .variation-swatches .attribute-swatches:not(:last-child) { 
+    margin-bottom: 6px; }
+.woocommerce ul.products li.product .product-wrapper .product-thumb .variation-swatches .attribute-swatches .swatch {
+    display: inline-block; cursor: pointer; text-align: center; }
+
+/*** Color Swatchus ***/
+.woocommerce ul.products li.product .product-wrapper .product-thumb .variation-swatches .attribute-swatches .swatch-color {
+    width: 20px; height: 20px; padding: 0; border: 1px solid transparent; -webkit-border-radius: var(--wdtRadius_Part); 
+    border-radius: var(--wdtRadius_Part); -webkit-transition: all .3s ease; transition: all .3s ease; margin: 2px; }
+.woocommerce ul.products li.product .product-wrapper .product-thumb .variation-swatches .attribute-swatches .swatch-color.selected {
+    border-color: var(--wdtPrimaryColor); }
+.woocommerce ul.products li.product .product-wrapper .product-thumb .variation-swatches .attribute-swatches .swatch-color div {
+    width: 100%; height: 100%; -webkit-transform: scale(1); transform: scale(1); -webkit-border-radius: var(--wdtRadius_Part); border-radius: var(--wdtRadius_Part); -webkit-transition: all .3s ease; transition: all .3s ease; }
+.woocommerce ul.products li.product .product-wrapper .product-thumb .variation-swatches .attribute-swatches .swatch-color.selected div { -webkit-transform: scale(0.8); transform: scale(0.8); }
+
+/*** Button Swatchus ***/
+.woocommerce ul.products li.product .product-wrapper .product-thumb .variation-swatches .attribute-swatches .swatch-button {
+    width: 35px; height: 35px; display: flex; align-items: center; justify-content: center; font-size: .7em; 
+    font-weight: var(--wdtFontWeight_Ext); text-transform: uppercase; background-color: var(--wdtAccentTxtColor); 
+    color: var(--wdtHeadAltColor); border: 1px solid var(--wdtBorderColor); -webkit-border-radius: var(--wdtRadius_Part); border-radius: var(--wdtRadius_Part); -webkit-transition: all .3s ease; transition: all .3s ease; margin: 2px; }
+.woocommerce ul.products li.product .product-wrapper .product-thumb .variation-swatches .attribute-swatches .swatch-button:hover,
+.woocommerce ul.products li.product .product-wrapper .product-thumb .variation-swatches .attribute-swatches .swatch-button.selected {
+    background-color: var(--wdtPrimaryColor); color: var(--wdtAccentTxtColor); border-color: var(--wdtPrimaryColor); }
+
+/*** Meterial Swatchus (Image) ***/
+.woocommerce ul.products li.product .product-wrapper .product-thumb .variation-swatches .attribute-swatches .swatch-material {
+    width: 45px; height: 45px; padding: 0; border: 1px solid transparent; -webkit-border-radius: var(--wdtRadius_Part); 
+    border-radius: var(--wdtRadius_Part); -webkit-transition: all .3s ease; transition: all .3s ease; margin: 2px; }
+.woocommerce ul.products li.product .product-wrapper .product-thumb .variation-swatches .attribute-swatches .swatch-material.selected {
+    border-color: var(--wdtPrimaryColor); }
+.woocommerce ul.products li.product .product-wrapper .product-thumb .variation-swatches .attribute-swatches .swatch-material div {
+    width: 100%; height: 100%; background-size: cover !important; background-position: 10% 30% !important; 
+    -webkit-transform: scale(1); transform: scale(1); -webkit-border-radius: var(--wdtRadius_Part); 
+    border-radius: var(--wdtRadius_Part); -webkit-transition: all .3s ease; transition: all .3s ease; }
+.woocommerce ul.products li.product .product-wrapper .product-thumb .variation-swatches .attribute-swatches .swatch-material.selected div { -webkit-transform: scale(0.8); transform: scale(0.8); }
+
+
+/*==== Detail Group - Swatchus Style ====*/
+
+.woocommerce ul.products li.product .product-wrapper .product-details .variation-swatches:has( ~ .product-title ) { margin: 0; }
+.woocommerce ul.products li.product .product-wrapper .product-details .variation-swatches .attribute-swatches {
+    width: 100%; max-width: 100%; display: inline-flex; margin-bottom: 6px; }
+.woocommerce ul.products.product-content-alignment-center li.product .product-wrapper .product-details .variation-swatches .attribute-swatches { justify-content: center; }
+.woocommerce ul.products.product-content-alignment-left li.product .product-wrapper .product-details .variation-swatches .attribute-swatches { justify-content: flex-start; }
+.woocommerce ul.products.product-content-alignment-right li.product .product-wrapper .product-details .variation-swatches .attribute-swatches { justify-content: flex-end; }
+.woocommerce ul.products li.product .product-wrapper .product-details .variation-swatches .attribute-swatches:not(:last-child) { 
+    margin-bottom: 6px; }
+.woocommerce ul.products li.product .product-wrapper .product-details .variation-swatches .attribute-swatches .swatch {
+    display: inline-block; cursor: pointer; text-align: center; }
+
+/*** Color Swatchus ***/
+.woocommerce ul.products li.product .product-wrapper .product-details .variation-swatches .attribute-swatches .swatch-color {
+    width: 20px; height: 20px; padding: 0; border: 1px solid transparent; -webkit-border-radius: var(--wdtRadius_Part); border-radius: var(--wdtRadius_Part); -webkit-transition: all .3s ease; transition: all .3s ease; margin: 2px; }
+.woocommerce ul.products li.product .product-wrapper .product-details .variation-swatches .attribute-swatches .swatch-color.selected {
+    border-color: var(--wdtPrimaryColor); }
+.woocommerce ul.products li.product .product-wrapper .product-details .variation-swatches .attribute-swatches .swatch-color div {
+    width: 100%; height: 100%; -webkit-transform: scale(1); transform: scale(1); -webkit-border-radius: var(--wdtRadius_Part); border-radius: var(--wdtRadius_Part); -webkit-transition: all .3s ease; transition: all .3s ease; }
+.woocommerce ul.products li.product .product-wrapper .product-details .variation-swatches .attribute-swatches .swatch-color.selected div { -webkit-transform: scale(0.8); transform: scale(0.8); }
+
+/*** Button Swatchus ***/
+.woocommerce ul.products li.product .product-wrapper .product-details .variation-swatches .attribute-swatches .swatch-button {
+    width: 35px; height: 35px; display: flex; align-items: center; justify-content: center; font-size: .7em; 
+    font-weight: var(--wdtFontWeight_Ext); text-transform: uppercase; background-color: var(--wdtAccentTxtColor); 
+    color: var(--wdtHeadAltColor); border: 1px solid var(--wdtBorderColor); -webkit-border-radius: var(--wdtRadius_Part); border-radius: var(--wdtRadius_Part); -webkit-transition: all .3s ease; transition: all .3s ease; margin: 2px; }
+.woocommerce ul.products li.product .product-wrapper .product-details .variation-swatches .attribute-swatches .swatch-button:hover,
+.woocommerce ul.products li.product .product-wrapper .product-details .variation-swatches .attribute-swatches .swatch-button.selected {
+    background-color: var(--wdtPrimaryColor); color: var(--wdtAccentTxtColor); border-color: var(--wdtPrimaryColor); }
+
+/*** Meterial Swatchus (Image) ***/
+.woocommerce ul.products li.product .product-wrapper .product-details .variation-swatches .attribute-swatches .swatch-material {
+    width: 45px; height: 45px; padding: 0; border: 1px solid transparent; -webkit-border-radius: var(--wdtRadius_Part); 
+    border-radius: var(--wdtRadius_Part); -webkit-transition: all .3s ease; transition: all .3s ease; margin: 2px; }
+.woocommerce ul.products li.product .product-wrapper .product-details .variation-swatches .attribute-swatches .swatch-material.selected { border-color: var(--wdtPrimaryColor); }
+.woocommerce ul.products li.product .product-wrapper .product-details .variation-swatches .attribute-swatches .swatch-material div {
+    width: 100%; height: 100%; background-size: cover !important; background-position: 10% 30% !important; 
+    -webkit-transform: scale(1); transform: scale(1); -webkit-border-radius: var(--wdtRadius_Part); 
+    border-radius: var(--wdtRadius_Part); -webkit-transition: all .3s ease; transition: all .3s ease; }
+.woocommerce ul.products li.product .product-wrapper .product-details .variation-swatches .attribute-swatches .swatch-material.selected div { -webkit-transform: scale(0.8); transform: scale(0.8); }
+
+/*--------------------------------------------------------------
+ 	Single Page Swatchus Style
+--------------------------------------------------------------*/
+
+/*==== Common Styles ====*/
+
+.woocommerce div.product form.variations_form .variation-swatches { margin: 6px 0; }
+.woocommerce div.product form.variations_form .variation-swatches .attribute-swatches {
+    display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; gap: 12px; }
+.woocommerce div.product form.variations_form .variation-swatches .attribute-swatches:not(:first-child) { margin-top: 20px; }
+.woocommerce div.product form.variations_form .variation-swatches .attribute-swatches div.wdt-swatches-container {
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-start; }
+.woocommerce div.product form.variations_form .variation-swatches .attribute-swatches .wdt-swatches-title {
+    display: inline-flex; align-items: center; font-family: var(--wdtFontTypo_Alt); 
+    font-size: var(--wdtFontSize_H6); font-weight: var(--wdtFontWeight_Ext); line-height: var(--wdtLineHeight_Alt); 
+    text-transform: capitalize; color: var(--wdtHeadAltColor); }
+.woocommerce div.product form.variations_form .variation-swatches .attribute-swatches .wdt-swatches-title .wdt-swatches-label ~ span:not(:last-child) { margin: 0 5px; }
+.woocommerce div.product form.variations_form .variation-swatches .attribute-swatches .wdt-swatches-title .wdt-swatches-label ~ span:has( ~ .wdt-swatches-support:empty) { display: none; }
+.woocommerce div.product form.variations_form .variation-swatches .clear_swatchespro {
+    font-family: var(--wdtFontTypo_Alt); font-size: var(--wdtFontSize_Base); font-weight: var(--wdtFontWeight_Base); 
+    text-transform: capitalize; text-decoration: underline !important; text-underline-offset: 1px; 
+    color: var(--wdtHeadAltColor); margin-top: 16px; display: none; }
+.woocommerce div.product form.variations_form .variation-swatches .attribute-swatches:has( > div.wdt-swatches-container .product_swatch.selected ) ~ .clear_swatchespro { display: block; }
+
+/*** Color Swatchus ***/
+.woocommerce div.product form.variations_form .variation-swatches .wdt-proswatch-color div.wdt-swatches-container { margin: -2px; }
+.woocommerce div.product form.variations_form .variation-swatches .wdt-proswatch-color div.wdt-swatches-container .proswatch-color {
+    width: 20px; height: 20px; padding: 0; background: none !important; border: 1px solid transparent; 
+    -webkit-border-radius: var(--wdtRadius_Part); border-radius: var(--wdtRadius_Part); 
+    -webkit-transition: all .3s ease; transition: all .3s ease; margin: 2px; }
+.woocommerce div.product form.variations_form .variation-swatches .wdt-proswatch-color div.wdt-swatches-container .proswatch-color.selected { border-color: var(--wdtPrimaryColor); }
+.woocommerce div.product form.variations_form .variation-swatches .wdt-proswatch-color div.wdt-swatches-container .proswatch-color div { width: 100%; height: 100%; -webkit-transform: scale(1); transform: scale(1); -webkit-border-radius: var(--wdtRadius_Part); border-radius: var(--wdtRadius_Part); -webkit-transition: all .3s ease; transition: all .3s ease; }
+.woocommerce div.product form.variations_form .variation-swatches .wdt-proswatch-color div.wdt-swatches-container .proswatch-color.selected div { -webkit-transform: scale(0.8); transform: scale(0.8); }
+
+/*** Button Swatchus ***/
+.woocommerce div.product form.variations_form .variation-swatches .wdt-proswatch-button div.wdt-swatches-container { margin: -5px; }
+.woocommerce div.product form.variations_form .variation-swatches .wdt-proswatch-button div.wdt-swatches-container .product_swatch {
+    width: clamp(2.5rem, 2.3888rem + 0.6135vw, 3.125rem); /*50px - 40px*/ height: 32px; padding: 8px; 
+    font-size: calc(var(--wdtFontSize_Ext) - 2px); font-weight: var(--wdtFontWeight_Alt); text-transform: uppercase; 
+    background-color: transparent; color: var(--wdtHeadAltColor); display: flex; justify-content: center; align-items: center; 
+    border: 1px solid var(--wdtBorderColor); -webkit-border-radius: var(--wdtRadius_Zero); border-radius: var(--wdtRadius_Zero); -webkit-transition: all .3s ease; transition: all .3s ease; margin: 4px !important; }
+.woocommerce div.product form.variations_form .variation-swatches .wdt-proswatch-button div.wdt-swatches-container .product_swatch:hover, .woocommerce div.product form.variations_form .variation-swatches .wdt-proswatch-button div.wdt-swatches-container .product_swatch.selected { 
+    background-color: var(--wdtPrimaryColor); color: var(--wdtAccentTxtColor); border-color: var(--wdtPrimaryColor); }
+
+/*** Meterial Swatchus (Image) ***/
+.woocommerce div.product form.variations_form .variation-swatches .wdt-proswatch-material div.wdt-swatches-container { margin: -2px; }
+.woocommerce div.product form.variations_form .variation-swatches .wdt-proswatch-material div.wdt-swatches-container .proswatch-material {
+    width: 35px; height: 35px; display: flex; align-items: center; justify-content: center; font-size: .7em; 
+    font-weight: var(--wdtFontWeight_Ext); text-transform: uppercase; background-color: var(--wdtAccentTxtColor); 
+    color: var(--wdtHeadAltColor); border: 1px solid var(--wdtBorderColor); -webkit-border-radius: var(--wdtRadius_Part); border-radius: var(--wdtRadius_Part); -webkit-transition: all .3s ease; transition: all .3s ease; margin: 2px; }
+.woocommerce div.product form.variations_form .variation-swatches .wdt-proswatch-material div.wdt-swatches-container .proswatch-material.selected { border-color: var(--wdtPrimaryColor); }
+.woocommerce div.product form.variations_form .variation-swatches .wdt-proswatch-material div.wdt-swatches-container .proswatch-material div { width: 100%; height: 100%; background-size: cover !important; background-position: 10% 30% !important; 
+    -webkit-transform: scale(1); transform: scale(1); -webkit-border-radius: var(--wdtRadius_Part); 
+    border-radius: var(--wdtRadius_Part); -webkit-transition: all .3s ease; transition: all .3s ease; }
+.woocommerce div.product form.variations_form .variation-swatches .wdt-proswatch-material div.wdt-swatches-container .proswatch-material.selected div { -webkit-transform: scale(0.8); transform: scale(0.8); }

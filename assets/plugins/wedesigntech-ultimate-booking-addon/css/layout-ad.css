@@ -1,0 +1,71 @@
+/* Variables */
+
+:root {
+
+    /*=== Radius Variables ===*/
+    --wdt_Booking_Radius_Zero: var(--wdtRadius_Zero, 0);
+    --wdt_Booking_Radius_Part: var(--wdtRadius_Part, 2.5em);
+    --wdt_Booking_Radius_Full: var(--wdtRadius_Full, 50%);
+
+    --wdt_Booking_Radius_1X: var(--wdtRadius_1X, 10px);
+    --wdt_Booking_Radius_2X: var(--wdtRadius_2X, 30px);
+    --wdt_Booking_Radius_3X: var(--wdtRadius_3X, clamp(1.25rem, 0.8345rem + 1.3879vw, 2.5rem)); /*40-20*/
+
+    /*=== Letter Spacing Variables ===*/
+    --wdt_Booking_LetterSpacing_1X: var(--wdtLetterSpacing_1X, 1px);
+    --wdt_Booking_LetterSpacing_2X: var(--wdtLetterSpacing_2X, 2px);
+    --wdt_Booking_LetterSpacing_3X: var(--wdtLetterSpacing_3X, 3px);
+
+    /*=== Padding Variables ===*/
+    --wdt_Booking_InputPadding: var(--wdtInputPadding, 20px 30px);
+
+    --wdt_Booking_Padding_Btn: var(--wdtPadding_Btn, 18px 34px);
+    --wdt_Booking_Padding_MiniBtn: var(--wdtPadding_MiniBtn, 12px 20px);
+    --wdt_Booking_Padding_MaxiBtn: var(--wdtPadding_MaxiBtn, 20px 40px);
+
+    --wdt_Booking_BaseTransition: var(--wdtBaseTransition, all 0.3s linear 0s);
+    --wdt_Booking_AltTransition: var(--wdtAltTransition, all 0.35s ease-in-out 0s);
+    --wdt_Booking_Ad-Transition: var(--wdt-Ad-Transition, 375ms cubic-bezier(0.7, 0, 0.3, 1));
+
+    /*=== Transform Hover Zoom-Out Style ===*/
+    --wdt_Booking_transform-rotateX: var(--wdt-transform-rotateX, 1deg);
+    --wdt_Booking_transform-perspective: var(--wdt-transform-perspective, 600px);
+    --wdt_Booking_transform-rotateY: var(--wdt-transform-rotateY, 0deg);
+    --wdt_Booking_transform-scale: var(--wdt-transform-scale, 0.9);
+    --wdt_Booking_transform-transition-duration: var(--wdt-transform-transition-duration, 400ms);
+
+    /*=== Transform Hover Zoom-In Style ===*/
+    --wdt_Booking_zoo-transform-rotateX: var(--wdt-zoo-transform-rotateX, 0.06deg);
+    --wdt_Booking_zoo-transform-perspective: var(--wdt-zoo-transform-perspective, 600px);
+    --wdt_Booking_zoo-transform-rotateY: var(--wdt-zoo-transform-rotateY, 0deg);
+    --wdt_Booking_zoo-transform-scale: var(--wdt-zoo-transform-scale, 1.2);
+    --wdt_Booking_zoo-transform-transition-duration: var(--wdt-zoo-transform-transition-duration, 400ms);
+
+    /*=== WPFW Color ===*/
+    
+  --wdt_Booking_PrimaryColor: var(--wdtPrimaryColor, #1f3d3f);
+    --wdt_Booking_PrimaryColorRgb: var(--wdtPrimaryColorRgb, rgb(31,61,63));
+    --wdt_Booking_SecondaryColor: var(--wdtSecondaryColor, #33a9b1);
+    --wdt_Booking_SecondaryColorRgb: var(--wdtSecondaryColorRgb, rgb(51,169,177));
+    --wdt_Booking_TertiaryColor: var(--wdtTertiaryColor, #f1f0f0);
+    --wdt_Booking_TertiaryColorRgb: var(--wdtTertiaryColorRgb, rgb(241,240,240));
+    --wdt_Booking_BodyBGColor: var(--wdtBodyBGColor, #dee8de);
+    --wdt_Booking_BodyBGColorRgb: var(--wdtBodyBGColorRgb, rgb(222,232,222));
+    --wdt_Booking_BodyTxtColor: var(--wdtBodyTxtColor, #4d4d4d);
+    --wdt_Booking_BodyTxtColorRgb: var(--wdtBodyTxtColorRgb, rgb(77,77,77));
+    --wdt_Booking_HeadAltColor: var(--wdtHeadAltColor, #1c1c1c);
+    --wdt_Booking_HeadAltColorRgb: var(--wdtHeadAltColorRgb, rgb(28,28,28));
+    --wdt_Booking_LinkColor: var(--wdtLinkColor, #1c1c1c);
+    --wdt_Booking_LinkColorRgb: var(--wdtLinkColorRgb, rgb(28,28,28));
+    --wdt_Booking_LinkHoverColor: var(--wdtLinkHoverColor, 51,169,177);
+    --wdt_Booking_LinkHoverColorRgb: var(--wdtLinkHoverColorRgb, rgb(51,169,177));
+    --wdt_Booking_BorderColor: var(--wdtBorderColor, #afafaf);
+    --wdt_Booking_BorderColorRgb: var(--wdtBorderColorRgb, rgb(175,175,175));
+    --wdt_Booking_AccentTxtColor: var(--wdtAccentTxtColor, #ffffff);
+    --wdt_Booking_AccentTxtColorRgb: var(--wdtAccentTxtColorRgb, rgb(255,255,255));
+
+  }
+
+
+
+/* === Theme Custom Styles === */
