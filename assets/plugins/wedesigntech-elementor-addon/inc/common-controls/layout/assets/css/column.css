@@ -10,7 +10,7 @@
 .wdt-column-wrapper.wdt-column-gap-wide { margin: -20px; }
 .wdt-column-wrapper.wdt-column-gap-wider { margin: -30px; }
 
-.wdt-column-wrapper.wdt-column-gap-default .wdt-column { padding: 10px; }
+.wdt-column-wrapper.wdt-column-gap-default .wdt-column { padding: 10px; width: 100%; }
 .wdt-column-wrapper.wdt-column-gap-no .wdt-column { padding: 0; }
 .wdt-column-wrapper.wdt-column-gap-narrow .wdt-column { padding: 5px; }
 .wdt-column-wrapper.wdt-column-gap-extended .wdt-column { padding: 15px; }

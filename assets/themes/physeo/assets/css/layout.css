@@ -193,6 +193,7 @@ Product Style Default
 /* content */
 .woocommerce ul.product-default-style.products.product-padding-content li.product .product-details {
     background-color: var(--wdtSecondaryColor);
+    padding: 1rem;
 }
 
 .woocommerce ul.product-default-style.products li.product .product-details {
@@ -529,7 +530,7 @@ My Account Code
 
 .wdt-rating-container .wdt-rating { display: inline-block; list-style: none; margin: 0 0px; padding: 0; vertical-align: top; }
 
-.wdt-rating-container .wdticon-stars { position: relative; display: inline-block; font-size: inherit; 
+/* .wdt-rating-container .wdticon-stars { position: relative; display: inline-block; font-size: inherit; 
     line-height: 1; color: #EF8B22; }
 
 .wdt-rating-container .wdticon-stars::before,
@@ -543,7 +544,7 @@ My Account Code
 .wdt-rating-container .wdticon-stars::after { display: block; z-index: 1; overflow: hidden; 
     position: absolute; left: 0; top: 0; bottom: 0; margin: auto; color: currentColor; background-clip: text;
     background-image: linear-gradient(to right, currentColor 50%, currentColor 50%); -webkit-text-fill-color: transparent;
-    background-color: transparent; background-repeat: no-repeat; background-position: left center; }
+    background-color: transparent; background-repeat: no-repeat; background-position: left center; } */
 
     /* ---------------Team-Form--------------- */
 
@@ -1346,8 +1347,7 @@ transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
 .wdt-accordion-toggle-holder.wdt-template-faq-template .wdt-accordion-toggle-description p {margin: 0; font-family: var(--wdtFontTypo_H4);  font-size: var(--wdtFontSize_H4);}
 .wdt-accordion-toggle-holder.wdt-template-faq-template .wdt-accordion-toggle-wrapper{border-bottom: 1px solid rgb(var(--wdtBorderColorRgb),0.5); margin-bottom: 0 !important;}
 .wdt-accordion-toggle-holder.wdt-template-faq-template .wdt-accordion-toggle-wrapper:last-child{border: 0;}
-.wdt-accordion-toggle-holder.wdt-template-faq-template .wdt-rating-container .wdticon-stars::after,
-.wdt-accordion-toggle-holder.wdt-template-faq-template .wdt-rating-container .wdticon-stars::before {color: #FFCC00; fill: #FFCC00;}
+.wdt-accordion-toggle-holder.wdt-template-faq-template .wdt-rating-container .wdticon-stars::after{color: #FFCC00; fill: #FFCC00;}
 
 .wdt-dark-bg .wdt-accordion-toggle-holder .wdt-accordion-toggle-title-holder .wdt-accordion-toggle-title,
 .wdt-dark-bg .wdt-accordion-toggle-holder .wdt-accordion-toggle-description.ui-accordion-content-active,

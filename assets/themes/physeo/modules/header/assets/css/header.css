@@ -751,3 +751,51 @@
             align-items: center;
             text-decoration: none;
         }
+
+        .product-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.primary-image,
+.secondary-image {
+  display: block;
+  width: 100%;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.secondary-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.product-thumb:hover .primary-image {
+  opacity: 0;
+}
+
+.product-thumb:hover .secondary-image {
+  opacity: 1;
+}
+.wdt-products-arrow-prev svg,
+.wdt-products-arrow-next svg {
+  display: block;       /* ensure visible */
+  width: 22px;          /* size */
+  height: 22px;
+  fill: #333;           /* icon color */
+}
+
+.wdt-products-arrow-prev,
+.wdt-products-arrow-next {
+  text-decoration: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wdt-products-arrow-prev span,
+.wdt-products-arrow-next span {
+  display: none; /* hide any leftover text */
+}

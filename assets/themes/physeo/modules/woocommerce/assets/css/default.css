@@ -337,7 +337,7 @@
 
     /* WooCommerce Default - Product Listing */
 
-    .woocommerce ul.products { margin-left: -15px; margin-right: -15px; }
+    .woocommerce ul.products { margin-left: 0px; margin-right: -15px; }
 
     .woocommerce ul.products:not([style*="height"]) li.product { display: inline; float: none; margin: 0; width: 100%; }
 
