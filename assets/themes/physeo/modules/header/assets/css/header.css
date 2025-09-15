@@ -338,14 +338,14 @@
 		display: inline-block; position: absolute; top: 50%; width: 15px; -webkit-backface-visibility: hidden; 
         backface-visibility: hidden; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
 
-	.mobile-menu ul li.go-back a:before {
-		content: "\f104"; font-family: "Physeo Icons"; font-size: 24px; height: 50px; line-height: 50px; left: 15px; text-align: center; }
+	/* .mobile-menu ul li.go-back a:before {
+		content: "\f104"; font-family: "Physeo Icons";  font-size: 24px; height: 50px; line-height: 50px; left: 15px; text-align: center; } */
 
 	.mobile-menu ul li.see-all a { padding: 0 15px !important; }
 
-	.mobile-menu li[class*="has-children"] > a:before,
+	/* .mobile-menu li[class*="has-children"] > a:before,
 	.mobile-menu li[class*="has_children"] > a:before {
-		content: "\f105"; font-family: "Physeo Icons"; font-size: 24px; height: 42px; line-height: 42px; right: 12px; text-align: center; }
+		content: "\f105"; font-family: "Font Awesome 6 Free !important"; font-weight: 900;  position: absolute; display: inline-block; font-size: 24px; height: 42px; line-height: 42px; right: 12px; text-align: center; } */
 
 	.mobile-menu ul li.go-back a:after,
 	.mobile-menu li[class*="has-children"] > a:after,
@@ -374,7 +374,6 @@
 
 	.mobile-menu-overlay.is-visible,
 	.mobile-menu ul li.go-back a:hover:after,
-	.mobile-menu li[class*="has-children"] > a:hover:after,
 	.mobile-menu li[class*="has_children"] > a:hover:after { opacity: 1; visibility: visible; }
 
 	.mobile-menu ul li a,
@@ -745,3 +744,10 @@
         @media only screen and (min-width:768px) and (max-width:1024px) { #header-wrapper { margin: 0 0 70px; } }
         @media only screen and (min-width:480px) and (max-width:767px) { #header-wrapper { margin: 0 0 60px; } }
         @media only screen and (max-width: 479px) { #header-wrapper { margin: 0 0 50px; } }
+
+        .mobile-menu ul > li > a:not(.menu-item-object-wdt_mega_menus ul li a){
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            text-decoration: none;
+        }
