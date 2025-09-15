@@ -330,7 +330,7 @@ Product Style Default
     right: calc(-1 * clamp(2.3125rem, 2.2875rem + 0.125vw, 2.4375rem)); /* -39px -> -37px */;
 }
 .woocommerce ul.product-default-style.products.vertical-position-bottom-right li.product .product-thumb .product-buttons-wrapper.product-icons:has( > .wc_inline_buttons > .wcct_btn_wrapper:only-child) {
-    border-radius: clamp(2.5rem, 2.375rem + 0.625vw, 3.125rem) clamp(2.5rem, 2.375rem + 0.625vw, 3.125rem) 0 0; /* 50px - 40px */ 
+    border-radius: 0 0 0 0; /* 50px - 40px */ 
 }
 /* only child */
 
